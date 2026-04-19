@@ -1,0 +1,39 @@
+# Default experiment configuration for Antidote.
+# Mirrors the paper setup: CIFAR-10, 250 targets, 8 copies, 25 epochs.
+
+seed: 42
+
+data:
+  root: ./data
+  download: true
+
+attack:
+  n_targets: 250
+  n_copies: 8
+
+defense:
+  similarity_threshold: 0.99
+  cluster_size_threshold: 3
+  feature_batch_size: 256
+  similarity_batch_size: 2000
+
+training:
+  epochs: 25
+  batch_size: 256
+  lr: 0.1
+  momentum: 0.9
+  weight_decay: 5.0e-4
+
+eval:
+  test_batch_size: 256
+  num_workers: 2
+
+# Ablation sweeps
+sweeps:
+  thresholds: [0.95, 0.99, 0.999]
+  copies: [2, 4, 8, 16]
+
+# Output
+output:
+  results_dir: ./results
+  figures_dir: ./results/figures
