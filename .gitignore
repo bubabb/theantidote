@@ -1,0 +1,64 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_meta
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Data and model artifacts (do not commit)
+data/
+datasets/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+
+# Logs and experiment runs
+logs/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+*.log
+
+# Results — commit aggregated CSVs/figures, not raw per-run dumps
+results/raw/
+results/**/run_*/
+results/tmp/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS / misc
+Thumbs.db

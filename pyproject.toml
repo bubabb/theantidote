@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "antidote"
+version = "0.1.0"
+description = "First targeted defense against Truth Serum privacy attacks via near-duplicate detection with pretrained features"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Bruna Vasconcelos", email = "bruna.gvasconcelos54@gmail.com" }]
+keywords = ["machine-learning-security", "membership-inference", "data-poisoning", "privacy", "truth-serum"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Repository = "https://github.com/bubabb/theantidote"
+Paper = "https://github.com/bubabb/theantidote/blob/main/paper/antidote_paper.pdf"
