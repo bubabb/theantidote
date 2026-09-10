@@ -1,7 +1,7 @@
 # Antidote
 
 > **First targeted defense against Truth Serum privacy attacks.**
-> Detect near-duplicate label-flipping poisons with pretrained ImageNet features — before training corruption occurs.
+> Detect near-duplicate label-flipping poisons with pretrained ImageNet features before training corruption occurs.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
