@@ -13,7 +13,7 @@
 
 The **Truth Serum** attack (Tramèr et al., CCS 2022) amplifies membership inference by poisoning training data with mislabeled copies of target samples. The original authors explicitly left defenses as an open problem.
 
-**Antidote** exploits the attack's unavoidable signature — *near-duplicate samples with inconsistent labels* — using pretrained ImageNet features that are immune to the poisoning we're trying to detect.
+**Antidote** exploits the attack's unavoidable signature  *near-duplicate samples with inconsistent labels* using pretrained ImageNet features that are immune to the poisoning we're trying to detect.
 
 | Method | Precision | Recall | F1 |
 |---|---|---|---|
